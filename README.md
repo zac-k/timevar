@@ -8,3 +8,6 @@ This is a question in one of our level three lab sripts, that we TAs were having
 What the question *means* to ask, is "What is the standard deviation of the spread of t values after measuring it for a large number of decays?" Just as we can use the standard deviation in detected counts to determine an experimental uncertainty for the Activity (calculated from count rate), we can also consider the counts to be precise measurements, and instead use the standard deviation in the spread of time values to determine this uncertainty. Naturally, if the measurements (and their precision) are identical, we should have identical uncertainties in Activity.
 
 This is a much more interesting question, which is undoubtedly the one intended in the original wording of the question. 
+
+
+![uncertainty caluclation](uncertainties.png)
