@@ -9,5 +9,12 @@ What the question *means* to ask, is "What is the standard deviation of the spre
 
 This is a much more interesting question, which is undoubtedly the one intended in the original wording of the question. 
 
+Here is a derivation of the standard deviation in the spread of t values over a number of trials.
+![uncertainty caluclation](std_t.png)
 
+We can use this standard deviation to determine the uncertainty in the activity. Likewise, we can do this the more conventional way, but assuming that the timing is highly precision, and that it's the standard deviation in the spread of N over multiple detections, that is the direct source of the uncertainty in the total Activity.
 ![uncertainty caluclation](uncertainties.png)
+
+This looks very plausible, but as a scientist, I like to compare it to something. I'm not much of an experimentalist, so a Monte-Carlo method is the obvious way to check my workings here. [The timevar.m script](timevar.m) provides the means to check the analytical result using a Monte-Carlo simulation. Surface plot of the analytical and numerical results (blue and red, respectively) are show below.
+
+![analytical-numerical](timevar.png)
