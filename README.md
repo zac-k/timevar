@@ -1,4 +1,4 @@
-
+﻿
 >You can acquire data in either constant time (time is your independent variable and the number of counts is 
 >the dependent variable) or constant count (the number of counts is the independent variable and the time is the >dependent variable). You should recall from previous experiments that for a fixed time, the best estimation of 
 >the uncertainty in the number of counts, N, is √N. If you acquire to a fixed number of counts, what is the >uncertainty in the measured time (due to the statistical nature of nuclear decay)?
@@ -12,7 +12,7 @@ This is a much more interesting question, which is undoubtedly the one intended 
 Here is a derivation of the standard deviation in the spread of t values over a number of trials.
 ![uncertainty caluclation](std_t.png)
 
-We can use this standard deviation to determine the uncertainty in the activity. Likewise, we can do this the more conventional way, but assuming that the timing is highly precision, and that it's the standard deviation in the spread of N over multiple detections, that is the direct source of the uncertainty in the total Activity.
+We can use this standard deviation to determine the uncertainty in the activity. Likewise, we can do this the more conventional way, by assuming that the timing is of high precision, and that it's the standard deviation in the spread of N over multiple detections, that is the direct source of the uncertainty in the total Activity.
 ![uncertainty caluclation](uncertainties.png)
 
 This looks very plausible, but as a scientist, I like to compare it to something. I'm not much of an experimentalist, so a Monte-Carlo method is the obvious way to check my workings here. [The timevar.m script](timevar.m) provides the means to check the analytical result using a Monte-Carlo simulation. Surface plots of the analytical and numerical results (blue and red, respectively) are show below. Here, σ_time is the standard deviation in time, N is number of counts recorded in the interval, and λ is the decay constant. 
